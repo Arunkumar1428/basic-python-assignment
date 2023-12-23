@@ -1,0 +1,160 @@
+1. Write a Python that program that takes two numbers as input and the langer number.
+
+
+A = int(input("Enter the 1st number"))
+M =int(input("Enter the 2st number"))
+
+if A>M:
+     print("A is greater than M")
+else:
+     print("A is smaller than M")
+
+
+OUTPUT:
+     Enter the 1st number14
+Enter the 2st number28
+A is smaller than M
+
+2. Create a python program that asks the user for a month {1-12} and then prints the corresponding season ("Spring","Summer","Autumn", and "Winter").
+
+m=int(input("Enter month between 1 to 12:"))
+if(m==12 or m==1 or m==2):
+    print("winter")
+elif(m==3 or m==4 or m==5):
+    print("spring")
+elif(m==6 or m==7 or m==8 ):
+    print("summer")
+elif(m==9 or m==10 or m==11):
+    print("Autumn")
+else:
+    print("invalid")
+
+Output:
+Enter month between 1 to 12:6
+summer
+
+
+
+3. Write a python program that determines whether a given year is a leap year or not. Use the leap year rules mentioned eailer.
+
+year= int(input("Enter the year:"))
+if (year%4==0 and year%100 !=0) or (year%400 ==0):
+    print("Year is leap year")
+else:
+    print("yearv is not leap year")
+
+OUTPUT:
+Enter the year:2000
+Year is leap year
+
+Enter the year:2002
+yearv is not leap year
+
+4. Create a program that takes on integer as input and checks if it's postive, negative, or zero. Print on appropriate message.
+ num= int(input("Enter the number"))
+
+if num >=1:
+    print("postive")
+elif num ==0:
+    print("zero")
+else:
+    print("negative")
+OUTPUT:
+Enter the number14
+postive
+
+Enter the number0
+zero
+
+Enter the number-28
+negative
+
+5. Write a program that takes asks the user for their age and gender. Based on their age and gende. Print a message like "Your are  a young men" or "Your are a old women".
+
+age = int(input("Enter the age"))
+if age<=40:
+    print("Your are a young man")
+    print("Your are a young women")
+else:
+    print("Your are a old women")
+    print("Your are a old man")
+
+OUTPUT:
+
+Enter the age34
+Your are a young man
+Your are a young women
+
+Enter the age45
+Your are a old women
+Your are a old man
+   
+6.Create a python program that takes a temperature in celsius and convert into Fahrenheit.
+
+
+temp=float(input("Enter a temperature:"))
+Fahrenheit=(temp*1.8)+32
+print(Fahrenheit," is Fahrenheit")
+
+output:
+Enter a temperature:28
+82.4  is Fahrenheit
+
+8.Create a program ask the user for the three numbers and then print them in ascending order.
+
+num1=int(input("Enter First number : "))
+num2=int(input("Enter Second number : "))
+num3=int(input("Enter Third number : "))
+if num1<num2 and num1<num3:
+    if num2<num3:
+        x,y,z=num1,num2,num3
+    else:
+        x,y,z=num1,num3,num2
+elif num2<num1 and num2<num3:
+    if num1<num3:
+        x,y,z=num2,num1,num3
+    else:
+        x,y,z=num2,num3,num1
+else:
+    if num1<num2:
+        x,y,z=num3,num1,num2
+    else:
+        x,y,z=num3,num2,num1
+print("Numbers in ascending order are : ",x,y,z)
+
+Output:
+Enter First number : 3
+Enter Second number : 4
+Enter Third number : 2
+Numbers in ascending order are :  2 3 4
+
+9.Write a program that checks if a given yearis a century year .
+
+year=int(input("Enter the year:"))
+if(year%4==0 and year%100==0):
+    print(year,"is a century year")
+else:
+    print(year,"is a not century year")
+
+Ouput:
+
+Enter the year:2000
+2000 is a century year
+
+10.Create a program that asks the user for a number and then determine if it is odd or even.
+
+num=int(input("Enter a number:"))
+if(num%2==0):
+    print(num,"is even")
+else:
+    print(num,"is odd")
+
+Output:
+Enter a number:2
+2 is even
+
+Enter a number:5
+5 is odd
+
+
+
